@@ -1,6 +1,4 @@
 --- !com.amazonaws.mobilehub.v0.Project 
-apps:
-  web: !com.amazonaws.mobilehub.v0.AppDO {}
 features:
   cloudlogic: !com.amazonaws.mobilehub.v0.CloudLogic 
     components:
@@ -11,7 +9,7 @@ features:
           sdk-generation-stage-name: Development
         paths:
           /items: !com.amazonaws.mobilehub.v0.Function 
-            codeFilename: uploads/sampleLambda-20180608110621.zip
+            codeFilename: uploads/sampleLambda-20190918222929.zip
             description: 'Handler for calls to resource path : /items/{proxy+}'
             enableCORS: true
             environment: {}
@@ -24,7 +22,7 @@ features:
             timeout: '3'
             version: lqCY1z6xII9.GbcgFGX8igZr7Q_ed2bE
           '/items/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
-            codeFilename: uploads/sampleLambda-20180608110621.zip
+            codeFilename: uploads/sampleLambda-20190918222929.zip
             description: 'Handler for calls to resource path : /items/{proxy+}'
             enableCORS: true
             environment: {}
@@ -63,5 +61,5 @@ features:
             require-numbers: true
             require-symbols: true
             require-upper-case: true
-name: aws-amplify-shadow-cljs
+name: aws-amplify-cljs-2019-09-18-22-29-19
 region: us-east-1
